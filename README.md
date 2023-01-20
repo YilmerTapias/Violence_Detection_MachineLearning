@@ -15,3 +15,38 @@ entrenado y da como resultado las probabilidades de que pertenezca al grupo de v
 violentas, luego escoge la que contenga la mayor probabilidad y determina si es violenta o no violenta,
 en el caso de que lo sea enciende las alarmas y notifica a los entes de control. todo esto en cuestión
 de segundos.
+
+## Documentacion y explicacion detallada de todo el proyecto
+| GoogleDrive | [https://drive.google.com/file/d/1a4z7v6aq0mt2-62MdtQZ0vGrhQvimSkI/view?usp=sharing]
+
+## Conclusiones
+
+se creó una red neuronal artificial aplicando transformaciones a las imágenes de nuestro conjunto
+de datos y es capaz de diferenciar si una imagen es violenta o no lo es, en tan solo 66 minutos de
+entrenamiento en un computador de mesa regular con 4gb de ram con cpu intel celeron de 2.50 GHz
+con grafica intel integrada rompiendo así el paradigma de que solo se puede entrenar este tipo de
+proyectos en pc de gran potencia, en gran parte se debe al algoritmo de optimización Adam y que el
+conjunto de datos no era muy grande.
+De todos los datos anteriores vemos que hacer un clasificador de imágenes sin usar convoluciones no
+es una idea descabellada podría decirse que es bastante buena, además también queda demostrado que
+podemos hacer un clasificador sobresaliente desde cero y sin usar bibliotecas como keras o tensorflow
+para su creacion, las cuales nos hacen todo el trabajo sucio. Aun así, estas bibliotecas siempre serán
+mucho mejores.
+Centrándose un poco más en el problema propuesto y los resultados de las pruebas, vemos como en
+algunas imágenes puede predecir con gran seguridad pero en otras aunque predice correctamente
+vemos que la precisión de la predicción no es la mejor esto se debe a varios factores destacando el
+hecho de que para llevar a cabo un proyecto de esta magnitud que pueda ser usado en las cámaras de
+vigilancia de una ciudad o en los pasillos de un colegio, esta debe ser entrenada con muchísimas más
+imágenes en distintas situaciones, climas y lugares. Además, como se dijo antes el uso de técnicas
+de convolucion para este tipo de problemas sigue siendo la mejor alternativa cuando por ejemplo
+tenemos un evento de agresión física en solo una pequeña parte de nuestra imagen o incluso detectar
+los gestos de miedo o enojo en una persona, un ejemplo que demuestra esto sería probar nuestro
+modelo con imágenes de personas besándose, ya que es cuando nuestro modelo se equivoca más por
+la gran cercanía entre los rostros de las personas aunque estas tengan expresiones de felicidad.
+También podemos concluir que al hacer pequeñas transformaciones (rotar, zoom, deformar, voltear) a
+las imágenes del conjunto de datos puede sacarnos del peligroso camino del sobre ajuste ademas de
+ofrecerle a nuestro clasificador vistas diferentes de las imagenes y por lo tanto crear un clasificador
+19
+mas eficiente, además como se observó en la tabla 1 entre más pequeñas son las dimensiones de las
+imágenes en nuestro dataset mas grande se hace el sobre ajuste, quizás usando convolucion sería
+distinto.

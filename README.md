@@ -21,6 +21,8 @@ de segundos.
 | GoogleDrive | [https://drive.google.com/file/d/1a4z7v6aq0mt2-62MdtQZ0vGrhQvimSkI/view?usp=sharing]
 
 ## Conclusiones
+![Predicion1](https://github.com/YilmerTapias/Violence_Detection_MachineLearning/blob/main/ImagenesNuevas/resultado1.jpg)
+![Predicion2](https://github.com/YilmerTapias/Violence_Detection_MachineLearning/blob/main/ImagenesNuevas/resultado2.jpg)
 
 se creó una red neuronal artificial aplicando transformaciones a las imágenes de nuestro conjunto
 de datos y es capaz de diferenciar si una imagen es violenta o no lo es, en tan solo 66 minutos de
